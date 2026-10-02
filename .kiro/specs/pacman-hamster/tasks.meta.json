@@ -1,0 +1,1148 @@
+{
+  "pbtResults": {
+    "5.2 Write property test for score bounds (Property 8)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790946452477
+    },
+    "11.3 Write property test for most-recent-tap-wins (Property 4)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790946690360
+    },
+    "3.3 Write property test for idempotent empty-tile consumption (Property 7)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790946698296
+    },
+    "3.2 Write property test for collectible consumption (Property 6)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790946705492
+    },
+    "11.4 Write property test for D-pad tap sets intent (Property 23)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790946731410
+    },
+    "13.2 Write property test for fallback on load failure (Property 25)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790946935787
+    },
+    "12.2 Write property test for aspect-ratio-preserving canvas scaling (Property 22)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790947149486
+    },
+    "6.2 Write property test for constant-speed movement (Property 1)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790947158408
+    },
+    "6.3 Write property test for wall blocking (Property 2)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790947180163
+    },
+    "4.2 Write property test for enemy direction selection (Property 10)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790947188329
+    },
+    "12.3 Write property test for portrait fit with adequate touch targets (Property 24)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790947412378
+    },
+    "6.4 Write property test for tunnel wrap (Property 3)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790947458356
+    },
+    "6.5 Write property test for buffered turns (Property 5)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790947606356
+    },
+    "9.6 Write property test for collision registration (Property 11)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790948636294
+    },
+    "9.14 Write property test for win on clearing collectibles (Property 19)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790948646519
+    },
+    "9.7 Write property test for power-pellet activation (Property 12)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790948674724
+    },
+    "9.5 Write property test for frightened consumption scoring (Property 9)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790948681974
+    },
+    "9.12 Write property test for losing the last life (Property 17)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790948944388
+    },
+    "9.11 Write property test for surviving-collision respawn (Property 16)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790948949901
+    },
+    "9.8 Write property test for frightened overlap sending enemy to spawn (Property 13)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790948968056
+    },
+    "9.9 Write property test for frightened-timeout return to pursuit (Property 14)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790948968180
+    },
+    "9.10 Write property test for non-fatal collision with debounce (Property 15)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790949583760
+    },
+    "9.13 Write property test for lives range (Property 18)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790949260929
+    },
+    "9.15 Write property test for ended games rejecting input (Property 20)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790949276693
+    },
+    "9.16 Write property test for restart producing a fresh session (Property 21)": {
+      "status": "passed",
+      "lastRunTimestamp": 1790949310587
+    }
+  },
+  "executionHistory": {
+    "1. Set up project structure and dev tooling": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945235688
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945960517
+      }
+    ],
+    "2.1 Implement direction and tile primitives": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945235858
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945263304
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945948468
+      }
+    ],
+    "2.2 Write unit tests for primitives": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945236611
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945969541
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946119467
+      }
+    ],
+    "3.1 Implement `Maze` from a string-array layout": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945236691
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945970709
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946121903
+      }
+    ],
+    "3.2 Write property test for collectible consumption (Property 6)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945236746
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946580978
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946766607
+      }
+    ],
+    "3.3 Write property test for idempotent empty-tile consumption (Property 7)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945236791
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946582222
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946768172
+      }
+    ],
+    "3.4 Write unit tests for maze parsing and reset": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945236840
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946328686
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946570267
+      }
+    ],
+    "4.1 Implement BFS distances and direction selection": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945236886
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946324954
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946567623
+      }
+    ],
+    "4.2 Write property test for enemy direction selection (Property 10)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945236933
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947032144
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947254359
+      }
+    ],
+    "5.1 Implement score points and clamping": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945236978
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945971991
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946120664
+      }
+    ],
+    "5.2 Write property test for score bounds (Property 8)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945237161
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946329872
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946569335
+      }
+    ],
+    "6.1 Implement `Player` movement, buffering, and tunnel wrap": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945237200
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946326480
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946571668
+      }
+    ],
+    "6.2 Write property test for constant-speed movement (Property 1)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945237244
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947032821
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947255418
+      }
+    ],
+    "6.3 Write property test for wall blocking (Property 2)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945237290
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947034271
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947257059
+      }
+    ],
+    "6.4 Write property test for tunnel wrap (Property 3)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945237339
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947273839
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947674783
+      }
+    ],
+    "6.5 Write property test for buffered turns (Property 5)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945237385
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947274963
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947677205
+      }
+    ],
+    "7.1 Implement `HamsterEnemy` modes and movement": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945237435
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947030475
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947260088
+      }
+    ],
+    "8. Checkpoint - simulation primitives": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945237491
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790950440021
+      }
+    ],
+    "9.1 Implement core game state, modes, and the fixed-step update": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945237541
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947698982
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947874828
+      }
+    ],
+    "9.2 Implement pellet consumption and win transition": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945237594
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947884456
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790948042108
+      }
+    ],
+    "9.3 Implement power pellet, Frightened state, and enemy consumption": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945237652
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790948055697
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790948249248
+      }
+    ],
+    "9.4 Implement collisions, lives, loss, and restart": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945237698
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790948250195
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790948428533
+      }
+    ],
+    "9.5 Write property test for frightened consumption scoring (Property 9)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945237747
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790948459580
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790948764954
+      }
+    ],
+    "9.6 Write property test for collision registration (Property 11)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945237798
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790948460733
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790948767311
+      }
+    ],
+    "9.7 Write property test for power-pellet activation (Property 12)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945237846
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790948462167
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790948764292
+      }
+    ],
+    "9.8 Write property test for frightened overlap sending enemy to spawn (Property 13)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945237887
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790948786939
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790949071511
+      }
+    ],
+    "9.9 Write property test for frightened-timeout return to pursuit (Property 14)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945237927
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790948787760
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790949068180
+      }
+    ],
+    "9.10 Write property test for non-fatal collision with debounce (Property 15)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945237970
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790948788793
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790949069373
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790949460614
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790949668032
+      }
+    ],
+    "9.11 Write property test for surviving-collision respawn (Property 16)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945238014
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790948790332
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790949071648
+      }
+    ],
+    "9.12 Write property test for losing the last life (Property 17)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945238056
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790948791286
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790949066804
+      }
+    ],
+    "9.13 Write property test for lives range (Property 18)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945238118
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790949116868
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790949354818
+      }
+    ],
+    "9.14 Write property test for win on clearing collectibles (Property 19)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945238165
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790948463122
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790948762570
+      }
+    ],
+    "9.15 Write property test for ended games rejecting input (Property 20)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945238215
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790949117986
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790949356223
+      }
+    ],
+    "9.16 Write property test for restart producing a fresh session (Property 21)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945238259
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790949119001
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790949357168
+      }
+    ],
+    "9.17 Write unit tests for initialization": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945238399
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947884995
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790948041274
+      }
+    ],
+    "10. Checkpoint - full simulation": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945238453
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790950446772
+      }
+    ],
+    "11.1 Implement `InputHandler` intent mapping": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945238497
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946145734
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946315824
+      }
+    ],
+    "11.2 Implement `DPad` DOM/touch controller": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945238538
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945974945
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946138293
+      }
+    ],
+    "11.3 Write property test for most-recent-tap-wins (Property 4)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945238581
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946583646
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946769141
+      }
+    ],
+    "11.4 Write property test for D-pad tap sets intent (Property 23)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945238632
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946584842
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946770206
+      }
+    ],
+    "11.5 Write unit tests for D-pad input behavior": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945238681
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946585890
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946771580
+      }
+    ],
+    "12.1 Implement `Layout` sizing and reflow": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945238732
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946327617
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946572572
+      }
+    ],
+    "12.2 Write property test for aspect-ratio-preserving canvas scaling (Property 22)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945238779
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947034917
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947258103
+      }
+    ],
+    "12.3 Write property test for portrait fit with adequate touch targets (Property 24)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945238821
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947275978
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947677753
+      }
+    ],
+    "13.1 Implement `loadSprite`": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945238863
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945975002
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946118386
+      }
+    ],
+    "13.2 Write property test for fallback on load failure (Property 25)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945238909
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946791243
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947012525
+      }
+    ],
+    "14. Produce the background-removed hamster sprite asset (MANUAL IMAGE-EDITING STEP)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945238954
+      }
+    ],
+    "15.1 Implement canvas drawing of maze, entities, and HUD": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945239006
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790948458331
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790948766639
+      }
+    ],
+    "15.2 Write integration tests with a mock canvas context": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945239057
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790949722850
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790950019972
+      }
+    ],
+    "16.1 Author `index.html`": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945239107
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946147055
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946315561
+      }
+    ],
+    "16.2 Author `styles.css`": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945239157
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946147886
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946315211
+      }
+    ],
+    "16.3 Write a test asserting the viewport meta configuration": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945239209
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946792483
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947013915
+      }
+    ],
+    "17.1 Implement the bootstrap and game loop": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945239258
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790949723782
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790950020721
+      }
+    ],
+    "17.2 Write integration tests for loop and bootstrap": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945239314
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790950044563
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790950404993
+      }
+    ],
+    "17.3 Write mobile-layout integration tests": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945239358
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790950048228
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790950406680
+      }
+    ],
+    "18.1 Write smoke/asset tests": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945239405
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946793437
+      },
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947014922
+      }
+    ],
+    "19. Final checkpoint - Ensure all tests pass": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790945239457
+      }
+    ],
+    "2. Define shared constants and data-model primitives": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946119537
+      }
+    ],
+    "5. Implement scoring utilities": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946569402
+      }
+    ],
+    "3. Implement the Maze grid model": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946768213
+      }
+    ],
+    "11. Implement input and the on-screen D-pad": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790946771639
+      }
+    ],
+    "13. Implement asset loading with fallback": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947012581
+      }
+    ],
+    "16. Build the static page shell (index.html + styles.css)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947013954
+      }
+    ],
+    "18. Smoke and asset checks for static hosting": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947014984
+      }
+    ],
+    "4. Implement pathfinding (BFS pursuit)": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947254446
+      }
+    ],
+    "7. Implement the Hamster enemy entity": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947260156
+      }
+    ],
+    "6. Implement the Player entity": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947677273
+      }
+    ],
+    "12. Implement responsive layout": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790947677818
+      }
+    ],
+    "9. Implement the Game simulation hub": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790949357254
+      }
+    ],
+    "15. Implement the Renderer": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790950020073
+      }
+    ],
+    "17. Wire everything together in main.js": [
+      {
+        "executionId": "258fa63b-5152-45bc-a91e-50500ef60321",
+        "chatSessionId": "sess_e208aaaa-fa5c-41ef-9cfe-fe95a0566903",
+        "timestamp": 1790950406774
+      }
+    ]
+  }
+}

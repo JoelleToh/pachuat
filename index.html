@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--
+      Scale to the device width at initial scale 1.0 and disable user-initiated
+      zoom so pinch / double-tap zoom do not disrupt gameplay (Req 10.3, 10.4).
+    -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>PacHuat</title>
+    <!-- Relative path so it resolves under a GitHub Pages project subpath (Req 9.6). -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!--
+      Root game shell. main.js looks up the canvas, HUD, and D-pad container
+      inside this element and wires them to the simulation and I/O layers.
+    -->
+    <main id="game" class="game">
+      <!-- HUD: score, lives, and status messages (start / win / loss / fallback). -->
+      <header id="hud" class="hud" aria-live="polite">
+        <div class="hud__stats">
+          <span class="hud__score">
+            Score: <span id="score" class="hud__score-value">0</span>
+          </span>
+          <span class="hud__lives">
+            Lives: <span id="lives" class="hud__lives-value">3</span>
+          </span>
+        </div>
+        <!-- Start prompt, win/loss text, and the "fallback graphics in use" notice. -->
+        <div id="message" class="hud__message" role="status"></div>
+        <!-- Restart control: hidden during play, revealed on win/loss so the
+             player can start a fresh session (main.js toggles `hidden`). -->
+        <button
+          type="button"
+          id="restart"
+          class="hud__restart"
+          aria-label="Restart game"
+          hidden
+        >
+          Restart
+        </button>
+      </header>
+
+      <!-- The playfield. main.js obtains the 2D context from this element. -->
+      <canvas id="game-canvas" class="game-canvas" width="448" height="496">
+        Your browser does not support the HTML5 canvas element.
+      </canvas>
+
+      <!--
+        On-screen D-pad: the sole control, displayed persistently (Req 8.2).
+        This container is passed to DPad as buttonsRoot; DPad finds each button
+        by its data-direction attribute via [data-direction="..."] (src/dpad.js).
+      -->
+      <nav id="dpad" class="dpad" aria-label="Directional controls">
+        <button
+          type="button"
+          class="dpad__button dpad__button--up"
+          data-direction="up"
+          aria-label="Move up"
+        >
+          &#9650;
+        </button>
+        <button
+          type="button"
+          class="dpad__button dpad__button--left"
+          data-direction="left"
+          aria-label="Move left"
+        >
+          &#9664;
+        </button>
+        <button
+          type="button"
+          class="dpad__button dpad__button--right"
+          data-direction="right"
+          aria-label="Move right"
+        >
+          &#9654;
+        </button>
+        <button
+          type="button"
+          class="dpad__button dpad__button--down"
+          data-direction="down"
+          aria-label="Move down"
+        >
+          &#9660;
+        </button>
+      </nav>
+    </main>
+
+    <!-- ES module entry point, relative path for GitHub Pages subpath (Req 9.1, 9.6). -->
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,211 @@
+/* styles.css — PacHuat
+ *
+ * Mobile-first, portrait-oriented layout for a touch-only Pac-Man variant.
+ * The page is a single, non-scrolling screen: a canvas (the maze) stacked
+ * above a persistent on-screen D-pad, with a compact HUD on top.
+ *
+ * Layout contract (matches index.html markup and src/layout.js):
+ *   #game        — full-viewport flex column: HUD, canvas, D-pad.
+ *   #hud         — score / lives / status messages.
+ *   #game-canvas — the maze canvas; src/layout.js sets its CSS width/height
+ *                  to fit the viewport while preserving the maze aspect ratio.
+ *   #dpad        — the D-pad root (passed to DPad as buttonsRoot); contains
+ *                  four buttons with data-direction="up|down|left|right".
+ *
+ * Requirements covered here:
+ *   8.2  — the D-pad is a persistent on-screen control while a session runs.
+ *   10.2 — each D-pad touch target is at least 44x44 CSS px.
+ * Related: 10.1 (canvas + D-pad fit a portrait viewport without page scroll).
+ * Canvas scaling math lives in src/layout.js (Req 7.6); this file provides the
+ * mobile-first frame it operates within.
+ */
+
+/* ----- Reset / box model ------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Lock the page to a single screen: no page scroll in portrait (Req 10.1),
+ * and suppress the browser's touch gestures so D-pad taps drive the game
+ * rather than scrolling or zooming the page (complements Req 8.3). */
+body {
+  overflow: hidden;
+  background: #0b0b1a;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ----- App frame: HUD, canvas, D-pad stacked in a portrait column -------- */
+
+#game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* Fill the visible viewport. 100dvh tracks the dynamic viewport (mobile
+   * browser chrome) where supported; 100vh is the fallback. */
+  height: 100vh;
+  height: 100dvh;
+  width: 100%;
+  max-width: 600px; /* RESPONSIVE_MAX_WIDTH_PX — mobile-first upper bound */
+  margin: 0 auto;
+  padding: 8px;
+  gap: 8px;
+}
+
+/* ----- HUD --------------------------------------------------------------- */
+
+#hud {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 28px;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+#hud .hud-message {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+/* ----- Canvas (the maze) ------------------------------------------------- */
+
+/* The canvas takes the remaining vertical space between the HUD and the
+ * D-pad. src/layout.js assigns explicit CSS width/height to preserve the maze
+ * aspect ratio (Req 7.6); the rules here just center it and stop it from
+ * overflowing its row. */
+#game-canvas {
+  flex: 1 1 auto;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  background: #000000;
+  image-rendering: pixelated; /* crisp pixels when scaled */
+  touch-action: none;
+}
+
+/* ----- D-pad: persistent on-screen control (Req 8.2) --------------------- */
+
+#dpad {
+  flex: 0 0 auto;
+  /* A 3x3 grid positions the four arrows in a classic cross; the center and
+   * corners stay empty. */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 8px;
+  width: min(70vw, 240px);
+  margin: 0 auto 8px;
+  touch-action: none;
+}
+
+/* Cross placement: up top-center, left/right on the middle row, down
+ * bottom-center. */
+#dpad [data-direction="up"]    { grid-column: 2; grid-row: 1; }
+#dpad [data-direction="left"]  { grid-column: 1; grid-row: 2; }
+#dpad [data-direction="right"] { grid-column: 3; grid-row: 2; }
+#dpad [data-direction="down"]  { grid-column: 2; grid-row: 3; }
+
+/* Each button is a touch target of at least 44x44 CSS px (Req 10.2). The
+ * min-width/min-height floor guarantees the target size even on narrow
+ * viewports where the grid tracks would otherwise shrink below 44px. */
+#dpad button {
+  min-width: 44px;
+  min-height: 44px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  border-radius: 12px;
+  background: #2a2a52;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#dpad button:active {
+  background: #4040a0;
+}
+
+/* ----- Fatal error (null canvas context, Req 7.7) ------------------------ */
+
+#error-message {
+  display: none;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  color: #ff6b6b;
+}
+
+#error-message.visible {
+  display: block;
+}
+
+/* ----- Landscape nudge --------------------------------------------------- */
+
+/* The game targets portrait. In landscape the column still holds together via
+ * flex; keep the D-pad from growing too wide so the canvas keeps vertical
+ * room. src/layout.js reflows sizes on orientationchange (Req 10.5). */
+@media (orientation: landscape) {
+  #dpad {
+    width: min(40vh, 200px);
+  }
+}
+
+/* ----- Restart button (shown on win/loss, Req 6.4) ---------------------- */
+
+/* Hidden during play via the HTML `hidden` attribute (toggled by main.js on
+ * win/loss). When visible it is a comfortable touch target (>= 44x44 CSS px,
+ * matching the D-pad floor) centered in the HUD. */
+#restart[hidden] {
+  display: none;
+}
+
+#restart {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #ffe14d;
+  color: #0b0b1a;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#restart:active {
+  background: #ffd000;
+}

@@ -1,0 +1,12 @@
+﻿# Dependencies
+node_modules/
+
+# Raw source photos (not shipped; only assets/hamster.png is used by the game)
+hamster.jpeg
+H2.jpg
+H2.png
+WhatsApp Image*.jpeg
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
